@@ -3,11 +3,11 @@
 import {
   ChevronDown,
   ChevronRight,
-  FileText,
-  Layers,
+  Landmark,
   LayoutDashboard,
-  Package,
-  ShoppingCart,
+  Headset,
+  FileText,
+  ArrowRightLeft,
 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
@@ -44,7 +44,7 @@ function Sidebar() {
               }`}
               onClick={() => setActiveTab("pages")}
             >
-              <FileText className="mr-2 h-4 w-4" />
+              <ArrowRightLeft className="mr-2 h-4 w-4" />
               Transactions
               <ChevronRight className="ml-auto h-4 w-4" />
             </Button>
@@ -55,7 +55,7 @@ function Sidebar() {
               }`}
               onClick={() => setActiveTab("projects")}
             >
-              <Layers className="mr-2 h-4 w-4" />
+              <Landmark className="mr-2 h-4 w-4" />
               Positions
             </Button>
             <Button
@@ -65,7 +65,7 @@ function Sidebar() {
               }`}
               onClick={() => setActiveTab("orders")}
             >
-              <ShoppingCart className="mr-2 h-4 w-4" />
+              <FileText className="mr-2 h-4 w-4" />
               Documents
             </Button>
             <Button
@@ -75,7 +75,7 @@ function Sidebar() {
               }`}
               onClick={() => setActiveTab("products")}
             >
-              <Package className="mr-2 h-4 w-4" />
+              <Headset className="mr-2 h-4 w-4" />
               Support
             </Button>
           </div>

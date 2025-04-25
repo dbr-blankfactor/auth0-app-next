@@ -4,7 +4,6 @@ import TransactionsTable from "./TransactionsTable";
 import { Settings, Badge } from "lucide-react";
 import { Button } from "./button";
 
-
 export default function DashboardHome() {
 
   return (
