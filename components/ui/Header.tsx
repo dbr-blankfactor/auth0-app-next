@@ -1,5 +1,9 @@
+'use client';
+
 import { Avatar, AvatarImage, AvatarFallback } from './avatar';
+import { ModeToggle } from "@/components/ui/ModeToggle";
 import { useUser } from "@auth0/nextjs-auth0";
+import { UserCircle } from 'lucide-react';
 import { Search } from 'lucide-react';
 import { Input } from './input';
 
@@ -18,7 +22,7 @@ export default function Header() {
       </div>
 
       {!user ? (
-        <a href="/auth/login">Login</a>
+        <></>
       ) : (
         <>
           <p>Welcome, {user.name}</p>
@@ -30,8 +34,10 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Avatar className="h-8 w-8 border border-[#2a3548]">
             <AvatarImage src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=32&width=32" />
+            <UserCircle className="text-white h-[32px] w-[32px]" />
             <AvatarFallback className="bg-[#2a3548]">LC</AvatarFallback>
           </Avatar>
+          <ModeToggle />
         </div>
       </div>
     </header>

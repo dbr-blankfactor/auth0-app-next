@@ -23,7 +23,6 @@ export default function DashboardHome() {
           </div>
         </div>
 
-        {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           <Card className="bg-[#1e293b] border-[#2a3548] shadow-none">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
@@ -97,7 +96,6 @@ export default function DashboardHome() {
           </Card>
         </div>
 
-        {/* Transactions Table */}
         <TransactionsTable />
       </main>
     </ScrollArea>

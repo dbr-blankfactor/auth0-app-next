@@ -1,4 +1,6 @@
-import { AuthProvider } from "./auth-provider";
+import { ThemeProvider } from "@/components/theme-provider";
+import Sidebar from "@/components/ui/Sidebar";
+import Header from "@/components/ui/Header";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 
@@ -17,7 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={inter.className}>
-        <AuthProvider>{children}</AuthProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex h-screen bg-[#1a2233] text-white">
+            <Sidebar />
+            <div className="flex-1 flex flex-col">
+              <Header />
+              {children}
+            </div>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
