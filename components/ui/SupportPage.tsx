@@ -23,9 +23,9 @@ export default function SupportPage() {
 
   return (
     <ScrollArea className="flex-1">
-      <main className="p-6">
+      <main className="p-6 bg-[#e5e7eb] min-h-screen">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold">Support</h1>
+          <h1 className="text-2xl font-bold text-black">Support</h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -119,8 +119,8 @@ export default function SupportPage() {
                 <div className="bg-[#c0c0c0] p-3 rounded">
                   <h3 className="font-medium">How do I reset my password?</h3>
                   <p className="text-sm mt-1">
-                    You can reset your password by clicking on &quot;Forgot Password&quot;
-                    on the login page.
+                    You can reset your password by clicking on &quot;Forgot
+                    Password&quot; on the login page.
                   </p>
                 </div>
                 <div className="bg-[#c0c0c0] p-3 rounded">
@@ -128,8 +128,8 @@ export default function SupportPage() {
                     How do I link a new bank account?
                   </h3>
                   <p className="text-sm mt-1">
-                    Go to the Positions page and click on &quot;Add New Account&quot; to
-                    link a new bank account.
+                    Go to the Positions page and click on &quot;Add New
+                    Account&quot; to link a new bank account.
                   </p>
                 </div>
                 <div className="bg-[#c0c0c0] p-3 rounded">
