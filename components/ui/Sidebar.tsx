@@ -30,8 +30,8 @@ function Sidebar() {
 
   return (
     <div className="w-[220px] border-r border-[#2a3548] flex flex-col">
-      <div className="p-4 flex items-center gap-2 border-b border-[#2a3548]">
-        <div className="text-white font-bold text-2xl flex items-center">
+      <div className="p-2 flex items-center gap-2 border-b border-[#2a3548]">
+        <div className="text-white font-bold text-2xl flex items-center px-2">
           <Logo />
         </div>
       </div>

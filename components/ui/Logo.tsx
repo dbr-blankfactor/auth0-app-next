@@ -2,7 +2,7 @@
 
 export default function Logo() {
   return (
-    <div className=" p-2 rounded">
+    <div className=" p-1 rounded">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 331.39 105.82"
